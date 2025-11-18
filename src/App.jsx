@@ -1,9 +1,15 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import SocialProof from './components/SocialProof';
 import Features from './components/Features';
+import HowItWorks from './components/HowItWorks';
 import Why from './components/Why';
+import Testimonials from './components/Testimonials';
+import Pricing from './components/Pricing';
 import Roadmap from './components/Roadmap';
+import FAQ from './components/FAQ';
 import CTA from './components/CTA';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -11,14 +17,17 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <SocialProof />
         <Features />
+        <HowItWorks />
         <Why />
+        <Testimonials />
+        <Pricing />
         <Roadmap />
+        <FAQ />
         <CTA />
       </main>
-      <footer className="border-t border-white/10 py-8 text-center text-sm text-slate-400">
-        © {new Date().getFullYear()} AI_DriverSafety. All rights reserved.
-      </footer>
+      <Footer />
     </div>
   );
 }
